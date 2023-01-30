@@ -1,25 +1,108 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Job from "./components/Job";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header name="The Job Board" />
+      <div className="container">
+        <Job
+          color="red"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="green"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="yellow"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="blue"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="pink"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="red"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="green"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="yellow"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="blue"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="pink"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="red"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+        <Job
+          color="green"
+          title="Full Time Sales Associate - Sydney Boutique"
+          contractType="CDI"
+          country="Australie"
+          city="Sydney"
+        />
+      </div>
+      <div className="footer">
+        <Footer
+          style="bold"
+          techno="React"
+          place="Le Reacteur"
+          name="Laurine Moulin"
+        />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
